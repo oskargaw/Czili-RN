@@ -5,5 +5,33 @@
         "es6": true
     },
     "parser": "babel-eslint",
-    "extends": "airbnb"
+    "extends": "airbnb",
+    "rules": {
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "react/prefer-stateless-function": [0,
+            {
+                "ignorePureComponents": true
+            }
+        ],
+        "no-use-before-define": [
+            "error",
+            {
+                "functions": false,
+                "classes": false,
+                "variables": false
+            }
+        ],
+        "react/jsx-one-expression-per-line": "warning",
+        "global-require": 1,
+        "no-unused-vars": 1,
+        "no-string-refs": 0
+    }
 }
