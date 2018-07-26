@@ -10,7 +10,10 @@ import {
   Keyboard,
   TouchableOpacity,
   KeyboardAvoidingView,
+  Dimensions,
 } from 'react-native';
+
+const { height, width } = Dimensions.get('window');
 
 export default class Login extends Component {
   render() {
@@ -84,7 +87,6 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 40,
-    width: 300,
     backgroundColor: 'rgba(255, 255, 255,0.2)',
     color: '#FFF',
     marginBottom: 20,

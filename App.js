@@ -4,18 +4,17 @@ import Splash from './components/Splash';
 import Login from './components/Login';
 
 export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { currentState: 'Splash' };
+    setTimeout(() => {
+      this.setState({ currentState: 'Login' });
+    }, 3000);
+  }
+
   render() {
-    return (
-      <View style={styles.container}>
-        <Login />
-      </View>
-    );
+    const { currentState } = this.state;
+    const mainScreen = currentState === 'Splash' ? <Splash /> : <Login />;
+    return mainScreen;
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-  },
-});

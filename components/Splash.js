@@ -5,7 +5,7 @@ export default class Splash extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>Hello</Text>
+        <Text style={styles.title}>Welcome to my app</Text>
       </View>
     );
   }
@@ -13,14 +13,14 @@ export default class Splash extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
+    backgroundColor: 'rgb(32, 53, 70)',
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
   title: {
     fontWeight: 'bold',
-    fontSize: 18,
-    color: 'black',
+    fontSize: 28,
+    color: 'white',
   },
 });
