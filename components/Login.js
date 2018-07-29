@@ -5,15 +5,11 @@ import {
   View,
   Image,
   TouchableWithoutFeedback,
-  StatusBar,
   TextInput,
   Keyboard,
   TouchableOpacity,
   KeyboardAvoidingView,
-  Dimensions,
 } from 'react-native';
-
-const { height, width } = Dimensions.get('window');
 
 export default class Login extends Component {
   render() {

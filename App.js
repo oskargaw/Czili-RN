@@ -2,6 +2,8 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Splash from './components/Splash';
 import Login from './components/Login';
+import HorizontalScrollView from './components/HorizontalScrollView';
+
 
 export default class App extends React.Component {
   constructor(props) {
@@ -14,7 +16,7 @@ export default class App extends React.Component {
 
   render() {
     const { currentState } = this.state;
-    const mainScreen = currentState === 'Splash' ? <Splash /> : <Login />;
+    const mainScreen = currentState === 'Splash' ? <Splash /> : <HorizontalScrollView />;
     return mainScreen;
   }
 }
