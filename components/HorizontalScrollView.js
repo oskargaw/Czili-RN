@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, ScrollView, Text, View, Dimensions } from 'react-native';
 
-const { height, width } = Dimensions.get('window');
+const { width } = Dimensions.get('window');
 
 export default class HorizontalScrollView extends Component {
   render() {
